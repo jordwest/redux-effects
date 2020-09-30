@@ -1,11 +1,12 @@
 {
   "name": "@jordwest/redux-effects",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Minimalistic side effects library for Redux",
   "main": "index.js",
   "scripts": {
     "build": "tsc"
   },
+  "repository": "https://github.com/jordwest/redux-effects",
   "author": "Jordan West",
   "license": "MIT",
   "devDependencies": {

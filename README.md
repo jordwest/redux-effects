@@ -51,7 +51,7 @@ const getWidgets = myApi => afterEffect(store => async (action) => {
 You can also perform one-time initialization of an effect in the first function:
 
 ```ts
-const dragDrop = myApi => afterEffect(store => {
+const dragDrop = afterEffect(store => {
   let keyDownHandler = (e) => {
     store.dispatch({ type: ActionType.KEY_PRESSED, key: e.key });
   }
@@ -90,5 +90,5 @@ export type AppEffect = Effect<RootState, RootAction>;
 const myEffect: AppEffect = afterEffect(store => action => { ... });
 
 // With dependency injection
-const myDepEffect = (dependencies): AppEffect => afterEffect(store => action => { ... });
+const myDepEffect = (dependencies: Dependencies): AppEffect => afterEffect(store => action => { ... });
 ```
