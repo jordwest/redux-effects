@@ -68,7 +68,7 @@ const dragDrop = myApi => afterEffect(store => {
 ```
 
 Note that handlers wrapped with `afterEffect` run actions after the action has been dispatched. For effects that need to run before the action
-has been dispatched and state has changed, use `beforeEffect`.
+has been dispatched and before state has changed, use `beforeEffect`.
 
 These functions are just convenience functions that are shorthand for returning an object as the second parameter. If you need to add an effect that
 acts both before and after dispatch, you can skip the convenience functions and instead do:
