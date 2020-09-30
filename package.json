@@ -1,6 +1,6 @@
 {
   "name": "@jordwest/redux-effects",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Minimalistic side effects library for Redux",
   "main": "index.js",
   "scripts": {
